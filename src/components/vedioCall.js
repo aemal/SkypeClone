@@ -22,7 +22,7 @@ class VedioCall extends Component {
 
   handleVideo= (stream)=> {
     // Update the state, triggering the component to re-render with the correct stream
-    this.refs.video.src = window.URL.createObjectURL(stream);
+    this.refs.video.srcObject = stream;
   };
 
   videoError= ()=> {
